@@ -76,6 +76,7 @@ Example document:
 1. Install Mongo Shell (if not included with Compass):  
    [https://www.mongodb.com/try/download/shell](https://www.mongodb.com/try/download/shell)
    - Select MSI not the zip
+   ![Download](/Assets/mongodb_download.png)
    
 
 
