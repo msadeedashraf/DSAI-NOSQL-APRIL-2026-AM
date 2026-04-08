@@ -144,7 +144,62 @@ db.students.find({ city: "Toronto" })
 ```js
 db.students.find().pretty()
 ```
+---
+# Intersting Data
 
+### insertOne (Manual – mongosh)
+```
+db.students.insertOne({
+  name: "Ali",
+  age: 20,
+  course: "MongoDB",
+  skills: ["SQL", "Python"]
+})
+```
+
+### insertMany (Manual – mongosh)
+
+```
+db.students.insertMany([
+  {
+    name: "Ali",
+    age: 20,
+    course: "MongoDB",
+    skills: ["SQL", "Python"]
+  },
+  {
+    name: "Sara",
+    age: 22,
+    course: "Data Science",
+    skills: ["Python", "Pandas"]
+  },
+  {
+    name: "John",
+    age: 21,
+    course: "Web Dev",
+    skills: ["HTML", "CSS", "JS"]
+  }
+])
+```
+- 👉 Key rule:
+ - insertOne → single { }
+ - insertMany → array [ { }, { } ]
+
+### Importing Data 
+
+- How to [setup](/mongoimport_setup.md)
+
+- On the terminal
+```
+mongoimport --db school --collection students --file students.json --jsonArray
+```
+
+- Breakdown:
+ - db school → database
+ - collection students → collection
+ - file → your JSON file
+ - jsonArray → because your file is [ {...}, {...} ]
+ 
 ---
 
 ## ✏️ 8. Updating Documents
