@@ -1,0 +1,1008 @@
+Microsoft Windows [Version 10.0.26200.8037]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\msade>mongosh
+Current Mongosh Log ID: 69d52333fa1f58bd3b3682d0
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.2
+Using MongoDB:          8.2.6
+Using Mongosh:          2.8.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2026-04-07T10:09:00.373-04:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> use schooldb
+switched to db schooldb
+schooldb> db.students.insertOne({
+|   name: "Alex",
+|   age: 14,
+|   grade: "8th",
+|   city: "Toronto"
+| })
+{
+  acknowledged: true,
+  insertedId: ObjectId('69d52368fa1f58bd3b3682d1')
+}
+schooldb> db.students.find()
+[
+  {
+    _id: ObjectId('69d52368fa1f58bd3b3682d1'),
+    name: 'Alex',
+    age: 14,
+    grade: '8th',
+    city: 'Toronto'
+  }
+]
+schooldb> exit
+
+C:\Users\msade>mongosh
+Current Mongosh Log ID: 69d65656c675a3ac1e3682d0
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.2
+Using MongoDB:          8.2.6
+Using Mongosh:          2.8.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2026-04-07T10:09:00.373-04:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> show db
+MongoshInvalidInputError: [COMMON-10001] 'db' is not a valid argument for "show".
+test>
+
+test>
+
+test>
+
+test> show dbs
+admin      40.00 KiB
+config     36.00 KiB
+local      40.00 KiB
+monkey-db  40.00 KiB
+schooldb   40.00 KiB
+test> use monkey-db
+switched to db monkey-db
+monkey-db> db.monkeys.find()
+[
+  {
+    _id: ObjectId('69d6561205cf0866f0caaacb'),
+    Name: 'Baboon',
+    Location: 'Africa & Asia',
+    Details: 'Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg',
+    Population: 10000,
+    Latitude: -8.783195,
+    Longitude: 34.508523
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaacc'),
+    Name: 'Capuchin Monkey',
+    Location: 'Central & South America',
+    Details: 'The capuchin monkeys are New World monkeys of the subfamily Cebinae. Prior to 2011, the subfamily contained only a single genus, Cebus.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/capuchin.jpg',
+    Population: 23000,
+    Latitude: 12.769013,
+    Longitude: -85.602364
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaacd'),
+    Name: 'Blue Monkey',
+    Location: 'Central and East Africa',
+    Details: 'The blue monkey or diademed monkey is a species of Old World monkey native to Central and East Africa, ranging from the upper Congo River basin east to the East African Rift and south to northern Angola and Zambia',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/bluemonkey.jpg',
+    Population: 12000,
+    Latitude: 1.957709,
+    Longitude: 37.297204
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaace'),
+    Name: 'Squirrel Monkey',
+    Location: 'Central & South America',
+    Details: 'The squirrel monkeys are the New World monkeys of the genus Saimiri. They are the only genus in the subfamily Saimirinae. The name of the genus Saimiri is of Tupi origin, and was also used as anEnglish name by early researchers.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/saimiri.jpg',
+    Population: 11000,
+    Latitude: -8.783195,
+    Longitude: -55.491477
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaacf'),
+    Name: 'Golden Lion Tamarin',
+    Location: 'Brazil',
+    Details: 'The golden lion tamarin also known as the golden marmoset, is a small New World monkey of the family Callitrichidae.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/tamarin.jpg',
+    Population: 19000,
+    Latitude: -14.235004,
+    Longitude: -51.92528
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad0'),
+    Name: 'Howler Monkey',
+    Location: 'South America',
+    Details: 'Howler monkeys are among the largest of the New World monkeys. Fifteen species are currently recognised. Previously classified in the family Cebidae, they are now placed in the family Atelidae.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/alouatta.jpg',
+    Population: 8000,
+    Latitude: -8.783195,
+    Longitude: -55.491477
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad1'),
+    Name: 'Japanese Macaque',
+    Location: 'Japan',
+    Details: 'The Japanese macaque, is a terrestrial Old World monkey species native to Japan. They are also sometimes known as the snow monkey because they live in areas where snow covers the ground for months each',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/macasa.jpg',
+    Population: 1000,
+    Latitude: 36.204824,
+    Longitude: 138.252924
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad2'),
+    Name: 'Mandrill',
+    Location: 'Southern Cameroon, Gabon, and Congo',
+    Details: 'The mandrill is a primate of the Old World monkey family, closely related to the baboons and even more closely to the drill. It is found in southern Cameroon, Gabon, Equatorial Guinea, and Congo.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/mandrill.jpg',
+    Population: 17000,
+    Latitude: 7.369722,
+    Longitude: 12.354722
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad3'),
+    Name: 'Proboscis Monkey',
+    Location: 'Borneo',
+    Details: 'The proboscis monkey or long-nosed monkey, known as the bekantan in Malay, is a reddish-brown arboreal Old World monkey that is endemic to the south-east Asian island of Borneo.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/borneo.jpg',
+    Population: 15000,
+    Latitude: 0.961883,
+    Longitude: 114.55485
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad4'),
+    Name: 'Sebastian',
+    Location: 'Seattle',
+    Details: 'This little trouble maker lives in Seattle with James and loves traveling on adventures with James and tweeting @MotzMonkeys. He by far is an Android fanboy and is getting ready for the new Google Pixel 9!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/sebastian.jpg',
+    Population: 1,
+    Latitude: 47.606209,
+    Longitude: -122.332071
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad5'),
+    Name: 'Henry',
+    Location: 'Phoenix',
+    Details: 'An adorable Monkey who is traveling the world with Heather and live tweets his adventures @MotzMonkeys. His favorite platform is iOS by far and is excited for the new iPhone Xs!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/henry.jpg',
+    Population: 1,
+    Latitude: 33.448377,
+    Longitude: -112.074037
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad6'),
+    Name: 'Red-shanked douc',
+    Location: 'Vietnam',
+    Details: 'The red-shanked douc is a species of Old World monkey, among the most colourful of all primates. The douc is an arboreal and diurnal monkey that eats and sleeps in the trees of the forest.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/douc.jpg',
+    Population: 1300,
+    Latitude: 16.111648,
+    Longitude: 108.262122
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad7'),
+    Name: 'Mooch',
+    Location: 'Seattle',
+    Details: 'An adorable Monkey who is traveling the world with Heather and live tweets his adventures @MotzMonkeys. Her favorite platform is iOS by far and is excited for the new iPhone 16!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/Mooch.PNG',
+    Population: 1,
+    Latitude: 47.608013,
+    Longitude: -122.335167
+  }
+]
+monkey-db> db.monkeys.findOne()
+{
+  _id: ObjectId('69d6561205cf0866f0caaacb'),
+  Name: 'Baboon',
+  Location: 'Africa & Asia',
+  Details: 'Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae.',
+  Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg',
+  Population: 10000,
+  Latitude: -8.783195,
+  Longitude: 34.508523
+}
+monkey-db> db.monkeys.find().pretty()
+[
+  {
+    _id: ObjectId('69d6561205cf0866f0caaacb'),
+    Name: 'Baboon',
+    Location: 'Africa & Asia',
+    Details: 'Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg',
+    Population: 10000,
+    Latitude: -8.783195,
+    Longitude: 34.508523
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaacc'),
+    Name: 'Capuchin Monkey',
+    Location: 'Central & South America',
+    Details: 'The capuchin monkeys are New World monkeys of the subfamily Cebinae. Prior to 2011, the subfamily contained only a single genus, Cebus.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/capuchin.jpg',
+    Population: 23000,
+    Latitude: 12.769013,
+    Longitude: -85.602364
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaacd'),
+    Name: 'Blue Monkey',
+    Location: 'Central and East Africa',
+    Details: 'The blue monkey or diademed monkey is a species of Old World monkey native to Central and East Africa, ranging from the upper Congo River basin east to the East African Rift and south to northern Angola and Zambia',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/bluemonkey.jpg',
+    Population: 12000,
+    Latitude: 1.957709,
+    Longitude: 37.297204
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaace'),
+    Name: 'Squirrel Monkey',
+    Location: 'Central & South America',
+    Details: 'The squirrel monkeys are the New World monkeys of the genus Saimiri. They are the only genus in the subfamily Saimirinae. The name of the genus Saimiri is of Tupi origin, and was also used as anEnglish name by early researchers.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/saimiri.jpg',
+    Population: 11000,
+    Latitude: -8.783195,
+    Longitude: -55.491477
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaacf'),
+    Name: 'Golden Lion Tamarin',
+    Location: 'Brazil',
+    Details: 'The golden lion tamarin also known as the golden marmoset, is a small New World monkey of the family Callitrichidae.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/tamarin.jpg',
+    Population: 19000,
+    Latitude: -14.235004,
+    Longitude: -51.92528
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad0'),
+    Name: 'Howler Monkey',
+    Location: 'South America',
+    Details: 'Howler monkeys are among the largest of the New World monkeys. Fifteen species are currently recognised. Previously classified in the family Cebidae, they are now placed in the family Atelidae.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/alouatta.jpg',
+    Population: 8000,
+    Latitude: -8.783195,
+    Longitude: -55.491477
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad1'),
+    Name: 'Japanese Macaque',
+    Location: 'Japan',
+    Details: 'The Japanese macaque, is a terrestrial Old World monkey species native to Japan. They are also sometimes known as the snow monkey because they live in areas where snow covers the ground for months each',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/macasa.jpg',
+    Population: 1000,
+    Latitude: 36.204824,
+    Longitude: 138.252924
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad2'),
+    Name: 'Mandrill',
+    Location: 'Southern Cameroon, Gabon, and Congo',
+    Details: 'The mandrill is a primate of the Old World monkey family, closely related to the baboons and even more closely to the drill. It is found in southern Cameroon, Gabon, Equatorial Guinea, and Congo.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/mandrill.jpg',
+    Population: 17000,
+    Latitude: 7.369722,
+    Longitude: 12.354722
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad3'),
+    Name: 'Proboscis Monkey',
+    Location: 'Borneo',
+    Details: 'The proboscis monkey or long-nosed monkey, known as the bekantan in Malay, is a reddish-brown arboreal Old World monkey that is endemic to the south-east Asian island of Borneo.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/borneo.jpg',
+    Population: 15000,
+    Latitude: 0.961883,
+    Longitude: 114.55485
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad4'),
+    Name: 'Sebastian',
+    Location: 'Seattle',
+    Details: 'This little trouble maker lives in Seattle with James and loves traveling on adventures with James and tweeting @MotzMonkeys. He by far is an Android fanboy and is getting ready for the new Google Pixel 9!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/sebastian.jpg',
+    Population: 1,
+    Latitude: 47.606209,
+    Longitude: -122.332071
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad5'),
+    Name: 'Henry',
+    Location: 'Phoenix',
+    Details: 'An adorable Monkey who is traveling the world with Heather and live tweets his adventures @MotzMonkeys. His favorite platform is iOS by far and is excited for the new iPhone Xs!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/henry.jpg',
+    Population: 1,
+    Latitude: 33.448377,
+    Longitude: -112.074037
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad6'),
+    Name: 'Red-shanked douc',
+    Location: 'Vietnam',
+    Details: 'The red-shanked douc is a species of Old World monkey, among the most colourful of all primates. The douc is an arboreal and diurnal monkey that eats and sleeps in the trees of the forest.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/douc.jpg',
+    Population: 1300,
+    Latitude: 16.111648,
+    Longitude: 108.262122
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad7'),
+    Name: 'Mooch',
+    Location: 'Seattle',
+    Details: 'An adorable Monkey who is traveling the world with Heather and live tweets his adventures @MotzMonkeys. Her favorite platform is iOS by far and is excited for the new iPhone 16!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/Mooch.PNG',
+    Population: 1,
+    Latitude: 47.608013,
+    Longitude: -122.335167
+  }
+]
+monkey-db> db.monkeys.find({Name:"Mooch"})
+[
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad7'),
+    Name: 'Mooch',
+    Location: 'Seattle',
+    Details: 'An adorable Monkey who is traveling the world with Heather and live tweets his adventures @MotzMonkeys. Her favorite platform is iOS by far and is excited for the new iPhone 16!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/Mooch.PNG',
+    Population: 1,
+    Latitude: 47.608013,
+    Longitude: -122.335167
+  }
+]
+monkey-db> db.monkeys.find({location:"Seattle"})
+
+monkey-db> db.monkeys.find({Location:"Seattle"})
+[
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad4'),
+    Name: 'Sebastian',
+    Location: 'Seattle',
+    Details: 'This little trouble maker lives in Seattle with James and loves traveling on adventures with James and tweeting @MotzMonkeys. He by far is an Android fanboy and is getting ready for the new Google Pixel 9!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/sebastian.jpg',
+    Population: 1,
+    Latitude: 47.606209,
+    Longitude: -122.332071
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad7'),
+    Name: 'Mooch',
+    Location: 'Seattle',
+    Details: 'An adorable Monkey who is traveling the world with Heather and live tweets his adventures @MotzMonkeys. Her favorite platform is iOS by far and is excited for the new iPhone 16!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/Mooch.PNG',
+    Population: 1,
+    Latitude: 47.608013,
+    Longitude: -122.335167
+  }
+]
+monkey-db> db.monkeys.find({Location:"Brazil"})
+[
+  {
+    _id: ObjectId('69d6561205cf0866f0caaacf'),
+    Name: 'Golden Lion Tamarin',
+    Location: 'Brazil',
+    Details: 'The golden lion tamarin also known as the golden marmoset, is a small New World monkey of the family Callitrichidae.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/tamarin.jpg',
+    Population: 19000,
+    Latitude: -14.235004,
+    Longitude: -51.92528
+  }
+]
+monkey-db> db.monkeys.find({Location:"Canada"})
+
+monkey-db> db.monkeys.find({})
+[
+  {
+    _id: ObjectId('69d6561205cf0866f0caaacb'),
+    Name: 'Baboon',
+    Location: 'Africa & Asia',
+    Details: 'Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg',
+    Population: 10000,
+    Latitude: -8.783195,
+    Longitude: 34.508523
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaacc'),
+    Name: 'Capuchin Monkey',
+    Location: 'Central & South America',
+    Details: 'The capuchin monkeys are New World monkeys of the subfamily Cebinae. Prior to 2011, the subfamily contained only a single genus, Cebus.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/capuchin.jpg',
+    Population: 23000,
+    Latitude: 12.769013,
+    Longitude: -85.602364
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaacd'),
+    Name: 'Blue Monkey',
+    Location: 'Central and East Africa',
+    Details: 'The blue monkey or diademed monkey is a species of Old World monkey native to Central and East Africa, ranging from the upper Congo River basin east to the East African Rift and south to northern Angola and Zambia',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/bluemonkey.jpg',
+    Population: 12000,
+    Latitude: 1.957709,
+    Longitude: 37.297204
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaace'),
+    Name: 'Squirrel Monkey',
+    Location: 'Central & South America',
+    Details: 'The squirrel monkeys are the New World monkeys of the genus Saimiri. They are the only genus in the subfamily Saimirinae. The name of the genus Saimiri is of Tupi origin, and was also used as anEnglish name by early researchers.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/saimiri.jpg',
+    Population: 11000,
+    Latitude: -8.783195,
+    Longitude: -55.491477
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaacf'),
+    Name: 'Golden Lion Tamarin',
+    Location: 'Brazil',
+    Details: 'The golden lion tamarin also known as the golden marmoset, is a small New World monkey of the family Callitrichidae.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/tamarin.jpg',
+    Population: 19000,
+    Latitude: -14.235004,
+    Longitude: -51.92528
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad0'),
+    Name: 'Howler Monkey',
+    Location: 'South America',
+    Details: 'Howler monkeys are among the largest of the New World monkeys. Fifteen species are currently recognised. Previously classified in the family Cebidae, they are now placed in the family Atelidae.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/alouatta.jpg',
+    Population: 8000,
+    Latitude: -8.783195,
+    Longitude: -55.491477
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad1'),
+    Name: 'Japanese Macaque',
+    Location: 'Japan',
+    Details: 'The Japanese macaque, is a terrestrial Old World monkey species native to Japan. They are also sometimes known as the snow monkey because they live in areas where snow covers the ground for months each',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/macasa.jpg',
+    Population: 1000,
+    Latitude: 36.204824,
+    Longitude: 138.252924
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad2'),
+    Name: 'Mandrill',
+    Location: 'Southern Cameroon, Gabon, and Congo',
+    Details: 'The mandrill is a primate of the Old World monkey family, closely related to the baboons and even more closely to the drill. It is found in southern Cameroon, Gabon, Equatorial Guinea, and Congo.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/mandrill.jpg',
+    Population: 17000,
+    Latitude: 7.369722,
+    Longitude: 12.354722
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad3'),
+    Name: 'Proboscis Monkey',
+    Location: 'Borneo',
+    Details: 'The proboscis monkey or long-nosed monkey, known as the bekantan in Malay, is a reddish-brown arboreal Old World monkey that is endemic to the south-east Asian island of Borneo.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/borneo.jpg',
+    Population: 15000,
+    Latitude: 0.961883,
+    Longitude: 114.55485
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad4'),
+    Name: 'Sebastian',
+    Location: 'Seattle',
+    Details: 'This little trouble maker lives in Seattle with James and loves traveling on adventures with James and tweeting @MotzMonkeys. He by far is an Android fanboy and is getting ready for the new Google Pixel 9!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/sebastian.jpg',
+    Population: 1,
+    Latitude: 47.606209,
+    Longitude: -122.332071
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad5'),
+    Name: 'Henry',
+    Location: 'Phoenix',
+    Details: 'An adorable Monkey who is traveling the world with Heather and live tweets his adventures @MotzMonkeys. His favorite platform is iOS by far and is excited for the new iPhone Xs!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/henry.jpg',
+    Population: 1,
+    Latitude: 33.448377,
+    Longitude: -112.074037
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad6'),
+    Name: 'Red-shanked douc',
+    Location: 'Vietnam',
+    Details: 'The red-shanked douc is a species of Old World monkey, among the most colourful of all primates. The douc is an arboreal and diurnal monkey that eats and sleeps in the trees of the forest.',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/douc.jpg',
+    Population: 1300,
+    Latitude: 16.111648,
+    Longitude: 108.262122
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad7'),
+    Name: 'Mooch',
+    Location: 'Seattle',
+    Details: 'An adorable Monkey who is traveling the world with Heather and live tweets his adventures @MotzMonkeys. Her favorite platform is iOS by far and is excited for the new iPhone 16!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/Mooch.PNG',
+    Population: 1,
+    Latitude: 47.608013,
+    Longitude: -122.335167
+  }
+]
+monkey-db> show collections
+monkeys
+monkey-db> db
+monkey-db
+monkey-db> db.dropDatabase()
+{ ok: 1, dropped: 'monkey-db' }
+monkey-db> db
+monkey-db
+monkey-db> show dbs
+admin     40.00 KiB
+config    88.00 KiB
+local     40.00 KiB
+schooldb  40.00 KiB
+monkey-db> use schooldb
+switched to db schooldb
+schooldb> show dbs
+admin     40.00 KiB
+config    88.00 KiB
+local     40.00 KiB
+schooldb  40.00 KiB
+schooldb> use monkey-db2
+switched to db monkey-db2
+monkey-db2> db.monkeys.insertOne({
+|     _id: ObjectId('69d6561205cf0866f0caaad7'),
+|     Name: 'Mooch',
+|     Location: 'Seattle',
+|     Details: 'An adorable Monkey who is traveling the world with Heather and live tweets his adventures @MotzMonkeys. Her favorite platform is iOS by far and is excited for the new iPhone 16!',
+|     Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/Mooch.PNG',
+|     Population: 1,
+|     Latitude: 47.608013,
+|     Longitude: -122.335167
+|   })
+{
+  acknowledged: true,
+  insertedId: ObjectId('69d6561205cf0866f0caaad7')
+}
+monkey-db2> db.monkeys.find()
+[
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad7'),
+    Name: 'Mooch',
+    Location: 'Seattle',
+    Details: 'An adorable Monkey who is traveling the world with Heather and live tweets his adventures @MotzMonkeys. Her favorite platform is iOS by far and is excited for the new iPhone 16!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/Mooch.PNG',
+    Population: 1,
+    Latitude: 47.608013,
+    Longitude: -122.335167
+  }
+]
+monkey-db2> db.monkeys.insertMany({
+monkey-db2> db.monkeys.insertMany({
+monkey-db2> db.monkeys.insertMany({
+|     _id: ObjectId('69d6561205cf0866f0caaad4'),
+|     Name: 'Sebastian',
+|     Location: 'Seattle',
+|     Details: 'This little trouble maker lives in Seattle with James and loves traveling on adventures with James and tweeting @MotzMonkeys. He by far is an Android fanboy and is getting ready for the new Google Pixel 9!',
+|     Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/sebastian.jpg',
+|     Population: 1,
+|     Latitude: 47.606209,
+|     Longitude: -122.332071
+|   },
+|   {
+|     _id: ObjectId('69d6561205cf0866f0caaad5'),
+|     Name: 'Henry',
+|     Location: 'Phoenix',
+|     Details: 'An adorable Monkey who is traveling the world with Heather and live tweets his adventures @MotzMonkeys. His favorite platform is iOS by far and is excited for the new iPhone Xs!',
+|     Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/henry.jpg',
+|     Population: 1,
+|     Latitude: 33.448377,
+|     Longitude: -112.074037
+|   },
+|   {
+|     _id: ObjectId('69d6561205cf0866f0caaad6'),
+|     Name: 'Red-shanked douc',
+|     Location: 'Vietnam',
+|     Details: 'The red-shanked douc is a species of Old World monkey, among the most colourful of all primates. The douc is an arboreal and diurnal monkey that eats and sleeps in the trees of the forest.',
+|     Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/douc.jpg',
+|     Population: 1300,
+|     Latitude: 16.111648,
+|     Longitude: 108.262122
+|   })
+MongoInvalidArgumentError: Argument "docs" must be an array of documents
+monkey-db2> db.monkeys.insertMany([{
+monkey-db2> db.monkeys.insertMany([{
+monkey-db2> db.monkeys.insertMany([{
+|     _id: ObjectId('69d6561205cf0866f0caaad4'),
+|     Name: 'Sebastian',
+|     Location: 'Seattle',
+|     Details: 'This little trouble maker lives in Seattle with James and loves traveling on adventures with James and tweeting @MotzMonkeys. He by far is an Android fanboy and is getting ready for the new Google Pixel 9!',
+|     Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/sebastian.jpg',
+|     Population: 1,
+|     Latitude: 47.606209,
+|     Longitude: -122.332071
+|   },
+|   {
+|     _id: ObjectId('69d6561205cf0866f0caaad5'),
+|     Name: 'Henry',
+|     Location: 'Phoenix',
+|     Details: 'An adorable Monkey who is traveling the world with Heather and live tweets his adventures @MotzMonkeys. His favorite platform is iOS by far and is excited for the new iPhone Xs!',
+|     Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/henry.jpg',
+|     Population: 1,
+|     Latitude: 33.448377,
+|     Longitude: -112.074037
+|   },
+|   {
+|     _id: ObjectId('69d6561205cf0866f0caaad6'),
+|     Name: 'Red-shanked douc',
+|     Location: 'Vietnam',
+|     Details: 'The red-shanked douc is a species of Old World monkey, among the most colourful of all primates. The douc is an arboreal and diurnal monkey that eats and sleeps in the trees of the forest.',
+|     Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/douc.jpg',
+|     Population: 1300,
+|     Latitude: 16.111648,
+|     Longitude: 108.262122
+|   }])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('69d6561205cf0866f0caaad4'),
+    '1': ObjectId('69d6561205cf0866f0caaad5'),
+    '2': ObjectId('69d6561205cf0866f0caaad6')
+  }
+}
+monkey-db2> d6561205cf0866f0caaad4'),
+|     Name: 'Sebastian',
+|     Location: 'Seattle',
+|     Details: 'This little trouble maker lives in Seattle with James and loves traveling on adventures with James and tweeting @MotzMonkeys. He by far is an Android fanboy and is getting ready for the new Google Pixel 9!',
+|     Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/sebastian.jpg',
+|     Population: 1,
+|     Latitude: 47.606209,
+|     Longitude: -122.332071
+|   },
+|   {
+|     _id: ObjectId('69d6561205cf0866f0caaad5'),
+|     Name: 'Henry',
+|     Location: 'Phoenix',
+|     Details: 'An adorable Monkey who is traveling the world with Heather and live tweets his adventures @MotzMonkeys. His favorite platform is iOS by far and is excited for the new iPhone Xs!',
+|     Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/henry.jpg',
+|     Population: 1,
+|     Latitude: 33.448377,
+|     Longitude: -112.074037
+|   },
+|   {
+|     _id: ObjectId('69d6561205cf0866f0caaad6'),
+|     Name: 'Red-shanked douc',
+|     Location: 'Vietnam',
+|     Details: 'The red-shanked douc is a species of Old World monkey, among the most colourful of all primates. The douc is an arboreal and diurnal monkey that eats and sleeps in the trees of the forest.',
+|     Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/douc.jpg',
+|     Population: 1300,
+|     Latitude: 16.111648,
+|     Longitude: 108.262122
+|   })
+Uncaught:
+SyntaxError: Unterminated string constant. (1:22)
+
+> 1 | d6561205cf0866f0caaad4'),
+    |                       ^
+  2 |     Name: 'Sebastian',
+  3 |     Location: 'Seattle',
+  4 |     Details: 'This little trouble maker lives in Seattle with James and loves traveling on adventures with James and tweeting @MotzMonkeys. He by far is an Android fanboy and is getting ready for the new Google Pixel 9!',
+
+monkey-db2>
+
+monkey-db2>
+
+monkey-db2>
+
+monkey-db2> db.monkeys.find()
+[
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad7'),
+    Name: 'Mooch',
+    Location: 'Seattle',
+    Details: 'An adorable Monkey who is traveling the world with Heather and live tweets his adventures @MotzMonkeys. Her favorite platform is iOS by far and is excited for the new iPhone 16!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/Mooch.PNG',
+    Population: 1,
+    Latitude: 47.608013,
+    Longitude: -122.335167
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad4'),
+    Name: 'Sebastian',
+    Location: 'Seattle',
+    Details: 'This little trouble maker lives in Seattle with James and loves traveling on adventures with James and tweeting @MotzMonkeys. He by far is an Android fanboy and is getting ready for the new Google Pixel 9!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/sebastian.jpg',
+    Population: 1,
+    Latitude: 47.606209,
+    Longitude: -122.332071
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad5'),
+    Name: 'Henry',
+    Location: 'Phoenix',
+    Details: 'An adorable Monkey who is traveling the world with Heather and live tweets his adventures @MotzMonkeys. His favorite platform is iOS by far and is excited for the new iPhone Xs!',
+    Image: 'https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/henry.jpg',
+    Population: 1,
+    Latitude: 33.448377,
+    Longitude: -112.074037
+  },
+  {
+    _id: ObjectId('69d6561205cf0866f0caaad6'),
+    Name: 'Red-shanked douc',
+    Location: 'Vietnam',
+    Details: 'The red-shanked douc is a species of Old World monkey, among the most colourful of all primates. The douc is an arboreal and diurnal monkey that eats and sleeps in the trees of the forest.',
+monkey-db2> exit
+
+C:\Users\msade>mongoimport
+'mongoimport' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\msade>cd "c:\Program Files\MongoDB"\
+
+c:\Program Files\MongoDB>dir
+ Volume in drive C is Windows
+ Volume Serial Number is EC14-ABA2
+
+ Directory of c:\Program Files\MongoDB
+
+2026-04-07  10:02 AM    <DIR>          .
+2026-04-07  10:02 AM    <DIR>          ..
+2026-04-07  10:02 AM    <DIR>          Server
+               0 File(s)              0 bytes
+               3 Dir(s)  1,800,004,403,200 bytes free
+
+c:\Program Files\MongoDB>cd Server
+
+c:\Program Files\MongoDB\Server>cd 8.2
+
+c:\Program Files\MongoDB\Server\8.2>dir
+ Volume in drive C is Windows
+ Volume Serial Number is EC14-ABA2
+
+ Directory of c:\Program Files\MongoDB\Server\8.2
+
+2026-04-07  10:03 AM    <DIR>          .
+2026-04-07  10:02 AM    <DIR>          ..
+2026-04-07  10:03 AM    <DIR>          bin
+2026-04-08  10:01 AM    <DIR>          data
+2026-02-25  08:46 PM            30,608 LICENSE-Community.txt
+2026-04-07  10:02 AM    <DIR>          log
+2026-02-25  08:46 PM            16,726 MPL-2
+2026-02-25  08:46 PM             2,094 README
+2026-02-25  08:46 PM           145,335 THIRD-PARTY-NOTICES
+               4 File(s)        194,763 bytes
+               5 Dir(s)  1,800,004,096,000 bytes free
+
+c:\Program Files\MongoDB\Server\8.2>cd bin
+
+c:\Program Files\MongoDB\Server\8.2\bin>dir
+ Volume in drive C is Windows
+ Volume Serial Number is EC14-ABA2
+
+ Directory of c:\Program Files\MongoDB\Server\8.2\bin
+
+2026-04-07  10:03 AM    <DIR>          .
+2026-04-07  10:03 AM    <DIR>          ..
+2026-02-25  08:46 PM             1,558 InstallCompass.ps1
+2026-04-07  10:08 AM               539 mongod.cfg
+2026-02-25  09:28 PM        77,552,128 mongod.exe
+2026-02-25  09:28 PM     1,222,406,144 mongod.pdb
+2026-02-25  09:28 PM        50,584,064 mongos.exe
+2026-02-25  09:28 PM       819,023,872 mongos.pdb
+               6 File(s)  2,169,568,305 bytes
+               2 Dir(s)  1,800,004,079,616 bytes free
+
+c:\Program Files\MongoDB\Server\8.2\bin>
+c:\Program Files\MongoDB\Server\8.2\bin>
+c:\Program Files\MongoDB\Server\8.2\bin>
+c:\Program Files\MongoDB\Server\8.2\bin>cd d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\mongodb-database-tools-windows-x86_64-100.16.0
+
+c:\Program Files\MongoDB\Server\8.2\bin>cd d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\
+
+c:\Program Files\MongoDB\Server\8.2\bin>d:
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL>cd mongodb-database-tools-windows-x86_64-100.16.0
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\mongodb-database-tools-windows-x86_64-100.16.0>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is 7299-365D
+
+ Directory of d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\mongodb-database-tools-windows-x86_64-100.16.0
+
+2026-04-08  10:03 AM    <DIR>          .
+2026-04-08  10:03 AM    <DIR>          ..
+2026-04-08  10:03 AM    <DIR>          bin
+2026-04-01  12:36 PM               554 LICENSE.md
+2026-04-01  12:36 PM            23,697 mongodb-database-tools-windows-x86_64-100.16.0.zip.cdx.json
+2026-04-01  12:36 PM             1,096 mongodb-database-tools-windows-x86_64-100.16.0.zip.sarif.json
+2026-04-01  12:36 PM             3,419 README.md
+2026-04-01  12:36 PM           414,334 THIRD-PARTY-NOTICES
+               5 File(s)        443,100 bytes
+               3 Dir(s)  649,449,144,320 bytes free
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\mongodb-database-tools-windows-x86_64-100.16.0>cd ..
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is 7299-365D
+
+ Directory of d:\CBC\DSAI-Jan-2026-AM\04-No-SQL
+
+2026-04-08  10:03 AM    <DIR>          .
+2026-04-06  11:52 AM    <DIR>          ..
+2026-04-07  09:30 AM    <DIR>          DSAI-NOSQL-APRIL-2026-AM
+2026-04-08  10:03 AM    <DIR>          mongodb-database-tools-windows-x86_64-100.16.0
+2026-04-08  10:03 AM        40,062,062 mongodb-database-tools-windows-x86_64-100.16.0.zip
+2026-03-26  11:41 AM    <DIR>          mongosh-2.8.2-win32-x64
+2026-04-07  09:28 AM        63,478,125 mongosh-2.8.2-win32-x64.zip
+               2 File(s)    103,540,187 bytes
+               5 Dir(s)  649,449,144,320 bytes free
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL>cd mongodb-tools\bin
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\mongodb-tools\bin>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is 7299-365D
+
+ Directory of d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\mongodb-tools\bin
+
+2026-04-08  10:03 AM    <DIR>          .
+2026-04-08  10:03 AM    <DIR>          ..
+2026-04-01  12:36 PM         8,162,816 bsondump.exe
+2026-04-01  12:36 PM        13,258,752 mongodump.exe
+2026-04-01  12:36 PM        13,029,376 mongoexport.exe
+2026-04-01  12:36 PM        13,096,448 mongofiles.exe
+2026-04-01  12:36 PM        13,206,016 mongoimport.exe
+2026-04-01  12:36 PM        13,559,296 mongorestore.exe
+2026-04-01  12:36 PM        12,833,280 mongostat.exe
+2026-04-01  12:36 PM        12,608,000 mongotop.exe
+               8 File(s)     99,753,984 bytes
+               2 Dir(s)  649,449,144,320 bytes free
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\mongodb-tools\bin>mongoimport
+2026-04-08T10:09:09.817-0400    no collection specified
+2026-04-08T10:09:09.817-0400    using filename `` as collection
+2026-04-08T10:09:09.817-0400    error validating settings: invalid collection name: collection name cannot be an empty string
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\mongodb-tools\bin>mongoimport --db monkey-db2 --collection new_monkeys --file 'd:\CBC\DSAI-Jan-2026-AM\04-No-SQL\DSAI-NOSQL-APRIL-2026-AM\Day-01\monkey.json' --jsonArray
+2026-04-08T10:12:35.934-0400    Failed: open 'd:\CBC\DSAI-Jan-2026-AM\04-No-SQL\DSAI-NOSQL-APRIL-2026-AM\Day-01\monkey.json': The filename, directory name, or volume label syntax is incorrect.
+2026-04-08T10:12:35.935-0400    0 document(s) imported successfully. 0 document(s) failed to import.
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\mongodb-tools\bin>mongoimport --db monkey-db2 --collection new_monkeys --file "d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\DSAI-NOSQL-APRIL-2026-AM\Day-01\monkey.json" --jsonArray
+2026-04-08T10:13:11.218-0400    connected to: mongodb://localhost/
+2026-04-08T10:13:11.236-0400    13 document(s) imported successfully. 0 document(s) failed to import.
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\mongodb-tools\bin>mongoimport --db monkey-db2 --collection new_monkeys --file monkey.json --jsonArray
+2026-04-08T10:16:13.326-0400    Failed: open monkey.json: The system cannot find the file specified.
+2026-04-08T10:16:13.327-0400    0 document(s) imported successfully. 0 document(s) failed to import.
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\mongodb-tools\bin>mongosh
+Current Mongosh Log ID: 69d663f222935c15a03682d0
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.8.2
+Using MongoDB:          8.2.6
+Using Mongosh:          2.8.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2026-04-07T10:09:00.373-04:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> show dbs
+admin        40.00 KiB
+config      108.00 KiB
+local        40.00 KiB
+monkey-db2  104.00 KiB
+schooldb     40.00 KiB
+test> use schooldb
+switched to db schooldb
+schooldb> show collections
+students
+schooldb> drop collection students
+Uncaught:
+SyntaxError: Missing semicolon. (1:4)
+
+> 1 | drop collection students
+    |     ^
+  2 |
+
+schooldb> drop collections students
+Uncaught:
+SyntaxError: Missing semicolon. (1:4)
+
+> 1 | drop collections students
+    |     ^
+  2 |
+
+schooldb> db.s
+db.serverBits         db.serverBuildInfo    db.serverCmdLineOpts  db.serverStatus       db.setLogLevel        db.setProfilingLevel  db.setSecondaryOk     db.shutdownServer     db.sql
+db.stats              db.students
+
+schooldb> db.students.drop()
+true
+schooldb> exit
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\mongodb-tools\bin>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is 7299-365D
+
+ Directory of d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\mongodb-tools\bin
+
+2026-04-08  10:18 AM    <DIR>          .
+2026-04-08  10:03 AM    <DIR>          ..
+2026-04-01  12:36 PM         8,162,816 bsondump.exe
+2026-04-01  12:36 PM        13,258,752 mongodump.exe
+2026-04-01  12:36 PM        13,029,376 mongoexport.exe
+2026-04-01  12:36 PM        13,096,448 mongofiles.exe
+2026-04-01  12:36 PM        13,206,016 mongoimport.exe
+2026-04-01  12:36 PM        13,559,296 mongorestore.exe
+2026-04-01  12:36 PM        12,833,280 mongostat.exe
+2026-04-01  12:36 PM        12,608,000 mongotop.exe
+2026-04-08  10:18 AM               335 students.json
+               9 File(s)     99,754,319 bytes
+               2 Dir(s)  649,449,140,224 bytes free
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\mongodb-tools\bin>mongoimport --db studentdb --collection students --file students.json --jsonArray
+2026-04-08T10:23:00.537-0400    connected to: mongodb://localhost/
+2026-04-08T10:23:00.549-0400    3 document(s) imported successfully. 0 document(s) failed to import.
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\mongodb-tools\bin>cd /
+
+d:\>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is 7299-365D
+
+ Directory of d:\
+
+2023-09-30  06:40 PM    <DIR>          128
+2023-09-30  06:30 PM    <DIR>          400
+2026-04-04  02:50 PM    <DIR>          AI
+2023-12-19  11:31 PM    <DIR>          backup-S9-SD
+2026-03-12  12:52 PM    <DIR>          CBC
+2025-08-18  12:25 PM    <DIR>          chatGPT5
+2026-01-25  02:50 AM    <DIR>          dUBAI
+2024-04-13  12:14 AM    <DIR>          eclipse
+2025-08-15  10:17 PM    <DIR>          electricity_bill
+2024-10-18  10:41 AM    <DIR>          Moon-17-oct-2024
+2025-11-13  02:13 PM    <DIR>          past-videos
+2025-08-20  11:16 AM    <DIR>          prompts
+2025-12-30  10:36 AM    <DIR>          scanned-docs
+2025-09-09  09:21 PM    <DIR>          shots
+2025-11-03  03:35 PM    <DIR>          side cover
+2024-04-13  04:26 PM    <DIR>          software
+2025-07-24  10:54 PM    <DIR>          tax2024-25
+2025-12-04  12:11 PM    <DIR>          void-cheque
+2026-03-10  11:29 AM    <DIR>          WAREESHA-IMMUNIZATION
+2024-04-07  07:45 PM    <DIR>          zoya backup
+               0 File(s)              0 bytes
+              20 Dir(s)  649,449,140,224 bytes free
+
+d:\>c:
+
+c:\Program Files\MongoDB\Server\8.2\bin>dir
+ Volume in drive C is Windows
+ Volume Serial Number is EC14-ABA2
+
+ Directory of c:\Program Files\MongoDB\Server\8.2\bin
+
+2026-04-07  10:03 AM    <DIR>          .
+2026-04-07  10:03 AM    <DIR>          ..
+2026-02-25  08:46 PM             1,558 InstallCompass.ps1
+2026-04-07  10:08 AM               539 mongod.cfg
+2026-02-25  09:28 PM        77,552,128 mongod.exe
+2026-02-25  09:28 PM     1,222,406,144 mongod.pdb
+2026-02-25  09:28 PM        50,584,064 mongos.exe
+2026-02-25  09:28 PM       819,023,872 mongos.pdb
+               6 File(s)  2,169,568,305 bytes
+               2 Dir(s)  1,800,003,125,248 bytes free
+
+c:\Program Files\MongoDB\Server\8.2\bin>cd /
+
+c:\>mongoimport
+'mongoimport' is not recognized as an internal or external command,
+operable program or batch file.
+
+c:\>
