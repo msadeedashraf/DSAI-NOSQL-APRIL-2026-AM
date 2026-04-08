@@ -61,7 +61,7 @@ Example document:
 
    💡 If your password has symbols, encode them like `%40` for `@`.
 
-3. Click **Connect** → you’ll see your cluster and databases.
+3. Click **Connect** → you’ll see your celuster and databases.
 
 ---
 
@@ -69,6 +69,7 @@ Example document:
 
 1. Install 
    [MongoDB Community Server](https://www.mongodb.com/try/download/community)
+   
 
 
 ## 💻 5. Setup MongoDB Shell (mongosh)
@@ -193,5 +194,11 @@ db.students.deleteMany({ city: "Toronto" })
 
 ---
 
+
+## MongoDB Command Line Database Tools Download
+
+[CLI Tools](https://www.mongodb.com/try/download/database-tools)
+
+---
 
 [Monkey Json Data](https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/MonkeysApp/monkeydata.json)
