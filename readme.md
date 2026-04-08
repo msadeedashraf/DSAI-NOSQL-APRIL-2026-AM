@@ -145,7 +145,8 @@ db.students.find({ city: "Toronto" })
 db.students.find().pretty()
 ```
 ---
-# Intersting Data
+
+# ➕ 8. Intersting Data
 
 ### insertOne (Manual – mongosh)
 ```
@@ -157,7 +158,7 @@ db.students.insertOne({
 })
 ```
 
-### ➕ 8. insertMany (Manual – mongosh)
+### insertMany (Manual – mongosh)
 
 ```
 db.students.insertMany([
