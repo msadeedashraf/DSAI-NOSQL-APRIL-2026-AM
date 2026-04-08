@@ -202,7 +202,7 @@ Breakdown:
  
 ---
 
-## ✏️ 8. Updating Documents
+## ✏️ 9. Updating Documents
 
 ### Update one
 ```js
@@ -222,7 +222,7 @@ db.students.updateMany(
 
 ---
 
-## ❌ 9. Deleting Documents
+## ❌ 10. Deleting Documents
 
 ### Delete one
 ```js
@@ -236,7 +236,7 @@ db.students.deleteMany({ city: "Toronto" })
 
 ---
 
-## 📚 10. Useful Commands
+## 📚 11. Useful Commands
 
 | Action | Command |
 |--------|----------|
