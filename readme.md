@@ -146,7 +146,7 @@ db.students.find().pretty()
 ```
 ---
 
-# ➕ 8. Intersting Data
+## ➕ 8. Intersting Data
 
 ### insertOne (Manual – mongosh)
 ```
