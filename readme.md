@@ -157,7 +157,7 @@ db.students.insertOne({
 })
 ```
 
-### insertMany (Manual – mongosh)
+### ➕ 8. insertMany (Manual – mongosh)
 
 ```
 db.students.insertMany([
@@ -181,7 +181,7 @@ db.students.insertMany([
   }
 ])
 ```
-- 👉 Key rule:
+👉 Key rule:
  - insertOne → single { }
  - insertMany → array [ { }, { } ]
 
@@ -194,7 +194,7 @@ db.students.insertMany([
 mongoimport --db school --collection students --file students.json --jsonArray
 ```
 
-- Breakdown:
+Breakdown:
  - db school → database
  - collection students → collection
  - file → your JSON file
