@@ -1,4 +1,8 @@
 Section A – Insert Tasks
+Task 0
+
+Import the student_level2.json using the mongoimport
+
 Task 1
 
 Insert one new student manually using insertOne().
