@@ -1,0 +1,242 @@
+[
+  {
+    "studentId": 101,
+    "name": "Ali Khan",
+    "age": 20,
+    "department": "Computer Science",
+    "skills": ["Python", "MongoDB", "SQL"],
+    "address": {
+      "city": "Hamilton",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "CST101", "title": "Database Fundamentals", "marks": 78 },
+      { "code": "CST102", "title": "Web Development", "marks": 85 }
+    ],
+    "isActive": true
+  },
+  {
+    "studentId": 102,
+    "name": "Sara Ahmed",
+    "age": 22,
+    "department": "Data Science",
+    "skills": ["Python", "Pandas", "Machine Learning"],
+    "address": {
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "DST201", "title": "Data Analysis", "marks": 91 },
+      { "code": "DST202", "title": "Statistics", "marks": 88 }
+    ],
+    "isActive": true
+  },
+  {
+    "studentId": 103,
+    "name": "John Smith",
+    "age": 21,
+    "department": "Information Technology",
+    "skills": ["Networking", "Linux"],
+    "address": {
+      "city": "Mississauga",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "NET101", "title": "Networking Basics", "marks": 74 },
+      { "code": "SEC102", "title": "Cyber Security", "marks": 69 }
+    ],
+    "isActive": false
+  },
+  {
+    "studentId": 104,
+    "name": "Grace Murphy",
+    "age": 19,
+    "department": "Computer Science",
+    "skills": ["JavaScript", "HTML", "CSS"],
+    "address": {
+      "city": "Burlington",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "WEB101", "title": "Frontend Development", "marks": 95 },
+      { "code": "DBM102", "title": "NoSQL Databases", "marks": 89 }
+    ],
+    "isActive": true
+  },
+  {
+    "studentId": 105,
+    "name": "Usman Tariq",
+    "age": 23,
+    "department": "Business Analytics",
+    "skills": ["Excel", "Power BI", "SQL"],
+    "address": {
+      "city": "Oakville",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "BUS201", "title": "Business Intelligence", "marks": 82 },
+      { "code": "ANA202", "title": "Data Visualization", "marks": 77 }
+    ],
+    "isActive": true
+  },
+  {
+    "studentId": 106,
+    "name": "Mark Anash",
+    "age": 21,
+    "department": "Data Science",
+    "skills": ["Python", "MongoDB", "Pandas"],
+    "address": {
+      "city": "Hamilton",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "DST201", "title": "Data Analysis", "marks": 84 },
+      { "code": "DBM102", "title": "NoSQL Databases", "marks": 87 }
+    ],
+    "isActive": true
+  },
+  {
+    "studentId": 107,
+    "name": "David Carl",
+    "age": 20,
+    "department": "Computer Science",
+    "skills": ["Java", "SQL", "MongoDB"],
+    "address": {
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "CST101", "title": "Database Fundamentals", "marks": 80 },
+      { "code": "DBM102", "title": "NoSQL Databases", "marks": 76 }
+    ],
+    "isActive": true
+  },
+  {
+    "studentId": 108,
+    "name": "Jamie Carter",
+    "age": 22,
+    "department": "Business Analytics",
+    "skills": ["Excel", "Power BI", "Tableau"],
+    "address": {
+      "city": "Mississauga",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "BUS201", "title": "Business Intelligence", "marks": 90 },
+      { "code": "ANA202", "title": "Data Visualization", "marks": 86 }
+    ],
+    "isActive": true
+  },
+  {
+    "studentId": 109,
+    "name": "Allan Smith",
+    "age": 24,
+    "department": "Information Technology",
+    "skills": ["Linux", "Networking", "Cyber Security"],
+    "address": {
+      "city": "Hamilton",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "NET101", "title": "Networking Basics", "marks": 72 },
+      { "code": "SEC102", "title": "Cyber Security", "marks": 81 }
+    ],
+    "isActive": false
+  },
+  {
+    "studentId": 110,
+    "name": "Jordan Blake",
+    "age": 19,
+    "department": "Computer Science",
+    "skills": ["JavaScript", "React", "HTML"],
+    "address": {
+      "city": "Oakville",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "WEB101", "title": "Frontend Development", "marks": 88 },
+      { "code": "CST102", "title": "Web Development", "marks": 91 }
+    ],
+    "isActive": true
+  },
+  {
+    "studentId": 111,
+    "name": "David Lee",
+    "age": 23,
+    "department": "Data Science",
+    "skills": ["Python", "Machine Learning", "SQL"],
+    "address": {
+      "city": "Burlington",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "DST201", "title": "Data Analysis", "marks": 85 },
+      { "code": "DST202", "title": "Statistics", "marks": 79 }
+    ],
+    "isActive": true
+  },
+  {
+    "studentId": 112,
+    "name": "Sophia Turner",
+    "age": 20,
+    "department": "Information Technology",
+    "skills": ["Linux", "MongoDB", "Python"],
+    "address": {
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "NET101", "title": "Networking Basics", "marks": 68 },
+      { "code": "DBM102", "title": "NoSQL Databases", "marks": 75 }
+    ],
+    "isActive": true
+  },
+  {
+    "studentId": 113,
+    "name": "Mia Cooper",
+    "age": 21,
+    "department": "Business Analytics",
+    "skills": ["SQL", "Excel", "Pandas"],
+    "address": {
+      "city": "Hamilton",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "BUS201", "title": "Business Intelligence", "marks": 78 },
+      { "code": "DST201", "title": "Data Analysis", "marks": 83 }
+    ],
+    "isActive": true
+  },
+  {
+    "studentId": 114,
+    "name": "James Foster",
+    "age": 22,
+    "department": "Computer Science",
+    "skills": ["C#", "SQL", "HTML"],
+    "address": {
+      "city": "Mississauga",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "CST101", "title": "Database Fundamentals", "marks": 73 },
+      { "code": "WEB101", "title": "Frontend Development", "marks": 70 }
+    ],
+    "isActive": false
+  },
+  {
+    "studentId": 115,
+    "name": "Henry Collins",
+    "age": 20,
+    "department": "Data Science",
+    "skills": ["Python", "Statistics", "Machine Learning"],
+    "address": {
+      "city": "Oakville",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "DST202", "title": "Statistics", "marks": 92 },
+      { "code": "DST201", "title": "Data Analysis", "marks": 89 }
+    ],
+    "isActive": true
+  }
+]
