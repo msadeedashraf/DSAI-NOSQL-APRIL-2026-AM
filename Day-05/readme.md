@@ -13,9 +13,11 @@ must include studentId
 must include skills array
 must include address object
 must include at least 2 course objects
+
 Task 2
 
 Insert two more students using insertMany().
+
 
 Section B – Basic Query Tasks
 Task 3
