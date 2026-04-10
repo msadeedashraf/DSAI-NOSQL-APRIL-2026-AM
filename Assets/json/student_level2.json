@@ -1,0 +1,82 @@
+[
+  {
+    "studentId": 101,
+    "name": "Ali Khan",
+    "age": 20,
+    "department": "Computer Science",
+    "skills": ["Python", "MongoDB", "SQL"],
+    "address": {
+      "city": "Hamilton",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "CST101", "title": "Database Fundamentals", "marks": 78 },
+      { "code": "CST102", "title": "Web Development", "marks": 85 }
+    ],
+    "isActive": true
+  },
+  {
+    "studentId": 102,
+    "name": "Sara Ahmed",
+    "age": 22,
+    "department": "Data Science",
+    "skills": ["Python", "Pandas", "Machine Learning"],
+    "address": {
+      "city": "Toronto",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "DST201", "title": "Data Analysis", "marks": 91 },
+      { "code": "DST202", "title": "Statistics", "marks": 88 }
+    ],
+    "isActive": true
+  },
+  {
+    "studentId": 103,
+    "name": "John Smith",
+    "age": 21,
+    "department": "Information Technology",
+    "skills": ["Networking", "Linux"],
+    "address": {
+      "city": "Mississauga",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "NET101", "title": "Networking Basics", "marks": 74 },
+      { "code": "SEC102", "title": "Cyber Security", "marks": 69 }
+    ],
+    "isActive": false
+  },
+  {
+    "studentId": 104,
+    "name": "Fatima Noor",
+    "age": 19,
+    "department": "Computer Science",
+    "skills": ["JavaScript", "HTML", "CSS"],
+    "address": {
+      "city": "Burlington",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "WEB101", "title": "Frontend Development", "marks": 95 },
+      { "code": "DBM102", "title": "NoSQL Databases", "marks": 89 }
+    ],
+    "isActive": true
+  },
+  {
+    "studentId": 105,
+    "name": "Usman Tariq",
+    "age": 23,
+    "department": "Business Analytics",
+    "skills": ["Excel", "Power BI", "SQL"],
+    "address": {
+      "city": "Oakville",
+      "province": "Ontario"
+    },
+    "courses": [
+      { "code": "BUS201", "title": "Business Intelligence", "marks": 82 },
+      { "code": "ANA202", "title": "Data Visualization", "marks": 77 }
+    ],
+    "isActive": true
+  }
+]
