@@ -139,26 +139,43 @@ Task 9
 
 Find students who have SQL as a skill.
 
+db.students.find({skills:"SQL"  }, {name:1, _id:0})
+
 Task 10
 
 Find students who are taking a course with code DBM102.
+
+db.students.find({"courses.code":"BUS201" }, {name:1, _id:0})
 
 Task 11
 
 Find students whose one of the course marks is greater than 90.
 
+db.students.find({"courses.marks": {$gt:90}  }, {name:1 , _id:0})
+
 Task 12
 
 Display only student name and city.
+
+ db.students.find({}, {name:1, "address.city":1 , _id:0})
+ db.students.find({}, {name:1, "address.city":1,"address.province":1, _id:0})
+
 
 Section D – Update Tasks
 Task 13
 
 Update one student’s age.
 
+db.students.find({studentId:103},{name:1,age:1,  _id:0})
+db.students.updateOne({studentId:103},{$set:{age:26}})
+
+
 Task 14
 
 Add a new skill to Ali Khan using $push.
+
+db.students.find({name:"Ali Khan"},{studentId:1, name:1,skills:1,  _id:0})
+db.students.updateOne({studentId:101},{$push:{skills:"HTML"}})
 
 Task 15
 
