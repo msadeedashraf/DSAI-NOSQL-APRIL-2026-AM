@@ -180,10 +180,15 @@ db.students.updateOne({studentId:101},{$push:{skills:"HTML"}})
 Task 15
 
 Change the city of one student.
-
+db.students.find({name:"John Smith"},{studentId:1, name:1,"address.city":1,  _id:0})
+ db.students.updateOne({studentId:103},{$set:{"address.city":"Hamilton"}})
 Task 16
 
 Update isActive to false for one student.
+
+db.students.find({name:"Usman Tariq"},{studentId:1, name:1,isActive:1,  _id:0})
+
+db.students.updateOne({studentId:105},{$set:{isActive:0}})
 
 Task 17
 
@@ -191,11 +196,21 @@ Increase marks of one course by 5 for a chosen student.
 
 This one is where weak students break. Good. Let them wrestle with nested arrays a bit.
 
+db.students.find({name:"Usman Tariq", "courses.code":"BUS201"},{studentId:1, name:1,"courses.$":1 ,isActive:1,  _id:0})
+
+db.students.updateOne({name:"Usman Tariq", "courses.code":"BUS201"},{$inc : {"courses.$.marks":5}})
+
+"courses.$" = only the FIRST matched element
+
 Section E – Delete Tasks
 Task 18
 
 Delete one student by studentId.
+db.students.find({studentId:104})
+db.students.deleteOne({studentId:104})
 
 Task 19
 
 Delete all inactive students.
+db.students.find({isActive:false}, {name:1, _id:0})
+db.students.find({isActive:false}, {name:1, _id:0})
