@@ -25,6 +25,8 @@ Show only the first matching student from Computer Science.
 
 Count how many active students exist.
 
+--- 
+
 ## Mini Case Study
 
 ### Scenario
