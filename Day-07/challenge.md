@@ -1,33 +1,33 @@
-Challenge 1
+### Challenge 1
 
 Find students who have both:
 
 skill = "Python"
 department = "Data Science"
-Challenge 2
+
+### Challenge 2
 
 Find students whose marks are less than 70 in any course.
 
-Challenge 3
+### Challenge 3
 
 Find students with more than 2 skills.
 
-Challenge 4
+### Challenge 4
 
 Find all students sorted by age in descending order.
 
-Challenge 5
+### Challenge 5
 
 Show only the first matching student from Computer Science.
 
-Challenge 6
+### Challenge 6
 
 Count how many active students exist.
 
+## Mini Case Study
 
-Mini Case Study
-
-Scenario
+### Scenario
 
 A college wants to store student data in MongoDB because:
 
