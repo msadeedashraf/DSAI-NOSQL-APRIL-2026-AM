@@ -60,15 +60,11 @@ db.students.find( { $expr:{$gt:[{$size:"$courses"},2]}  }  , {name:1, courses:1 
 
 ### Challenge 9 
 Count only the courses where the marks are greater than 70
-db.students.aggregate([{$unwind: "$courses"}, {$match: {"courses.marks":{$gt:70}}}, {$group: {_id:"$name", totalcourses: {$sum:1}   }  }   ])
 
 get the students who scored more than 90 in any course.
-db.students.find({courses: {$elemMatch:{marks: {$gt:90}}}   }, {name:1,courses:1, _id:0})
 
 get the students who scored 90 in all the course.
-db.students.find({courses: {$elemMatch:{marks: {$gt:90}}}   }, {name:1,courses:1, _id:0})
 
-db.students.find({courses:{ $not: {$elemMatch:{marks: {$lt:90}}}  } }, {name:1,courses:1, _id:0})
 
 ## Mini Case Study
 

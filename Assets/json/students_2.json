@@ -235,7 +235,9 @@
     },
     "courses": [
       { "code": "DST202", "title": "Statistics", "marks": 92 },
-      { "code": "DST201", "title": "Data Analysis", "marks": 89 }
+      { "code": "DST201", "title": "Data Analysis", "marks": 91 },
+      { "code": "CST101", "title": "Database Fundamentals", "marks": 93 }
+     
     ],
     "isActive": true
   }
