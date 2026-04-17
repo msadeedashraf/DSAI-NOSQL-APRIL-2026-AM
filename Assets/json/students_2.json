@@ -150,7 +150,7 @@
     "department": "Computer Science",
     "skills": ["JavaScript", "React", "HTML"],
     "address": {
-      "city": "Oakville",      
+      "city": "Hamilton",      
       "province": "Ontario"
     },
     "courses": [
