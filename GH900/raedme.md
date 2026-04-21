@@ -4,6 +4,18 @@
 
 [Git](https://github.com/)
 
+### Create a Repo
+
+- Signin into the GitHub accoun. [GitHub](https://github.com/)
+
+![Create a new Repo](/Assets/git/new-repo.png)
+
+
+### Clone an existing repo
+
+- Get/Copy the URL for the repo.
+
+![URL](/Assets/git/copy-url.png)
 
 
 ### Push/Upload the files from a local folder on to the gitHub empty repo.
