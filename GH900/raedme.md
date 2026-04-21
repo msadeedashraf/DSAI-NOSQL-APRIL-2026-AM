@@ -8,7 +8,7 @@
 
 ### Push/Upload the files from a local folder on to the gitHub empty repo.
 
-`
+```
 git init
 git add README.md
 git commit -m "first commit"
@@ -16,4 +16,4 @@ git branch -M main
 git remote add origin https://github.com/msadeedashraf/test-abc.git
 git push -u origin main
 
-`
+```
