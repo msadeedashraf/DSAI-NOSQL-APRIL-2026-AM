@@ -66,3 +66,43 @@ git remote add origin https://github.com/msadeedashraf/test-abc.git
 git push -u origin main
 
 ```
+
+### Create GitHub Repo from CLI
+
+- gh --version 
+- If it fails Install GitHub CLI
+
+```
+winget install GitHub.cli
+
+```
+- or Download Go to : [githubCLI](https://cli.github.com)
+- Download Windows .msi installer
+- Run installer → next → finish
+- and verify gh --version
+
+```
+mkdir sample-project
+
+cd sample-project
+
+git init
+
+echo Hello from Sadeed > Readme.md
+
+git status
+
+git add .
+
+git commit -m "Initial Commit"
+
+git branch -M main
+
+gh auth login
+
+gh repo list
+
+gh repo create sample-project --public --source=. --remote=origin --push
+
+```
+

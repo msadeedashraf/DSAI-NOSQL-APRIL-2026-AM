@@ -1,0 +1,247 @@
+Microsoft Windows [Version 10.0.26200.8246]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\msade>gh --version
+gh version 2.90.0 (2026-04-16)
+https://github.com/cli/cli/releases/tag/v2.90.0
+
+C:\Users\msade>
+C:\Users\msade>
+C:\Users\msade>
+C:\Users\msade>cd d:\CBC\DSAI-Jan-2026-AM\04-No-SQL
+
+C:\Users\msade>d:
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is 7299-365D
+
+ Directory of d:\CBC\DSAI-Jan-2026-AM\04-No-SQL
+
+2026-04-21  10:32 AM    <DIR>          .
+2026-04-06  11:52 AM    <DIR>          ..
+2026-04-21  10:34 AM    <DIR>          code
+2026-04-20  09:32 AM    <DIR>          DSAI-NOSQL-APRIL-2026-AM
+2026-04-08  10:03 AM        40,062,062 mongodb-database-tools-windows-x86_64-100.16.0.zip
+2026-04-08  10:03 AM    <DIR>          mongodb-tools
+2026-03-26  11:41 AM    <DIR>          mongosh-2.8.2-win32-x64
+2026-04-07  09:28 AM        63,478,125 mongosh-2.8.2-win32-x64.zip
+               2 File(s)    103,540,187 bytes
+               6 Dir(s)  644,962,107,392 bytes free
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL>gh auth login
+? Where do you use GitHub? GitHub.com
+? What is your preferred protocol for Git operations on this host? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: F226-B90F
+Press Enter to open https://github.com/login/device in your browser...
+✓ Authentication complete.
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as msadeedashraf
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL>gh repo list
+
+Showing 30 of 71 repositories in @msadeedashraf
+
+NAME                                                      DESCRIPTION                                 INFO    UPDATED
+msadeedashraf/FSWD-MEAN-APR-2026-AM                                                                   public  about 19 hours ago
+msadeedashraf/DSAI-NOSQL-APRIL-2026-AM                                                                public  about 22 hours ago
+msadeedashraf/test-abc                                                                                public  about 22 hours ago
+msadeedashraf/dsai-nosql-test2                                                                        public  about 22 hours ago
+msadeedashraf/dsai-nosql-test                                                                         public  about 22 hours ago
+msadeedashraf/DSAI-PL300-APR-2026-PM                                                                  public  about 4 days ago
+msadeedashraf/DSAI-DP700-MAR-2026-PM                                                                  public  about 14 days ago
+msadeedashraf/DSAI-SQL-MAR-2026-AM                                                                    public  about 19 days ago
+msadeedashraf/DSAI-ML-Feb-2026-PM                                                                     public  about 1 month ago
+msadeedashraf/html-abhay-feb-2026-pm                                                                  public  about 2 months ago
+msadeedashraf/dsai-cloud-feb-2026-am                                                                  public  about 2 months ago
+msadeedashraf/DSAI-LINUX-JAN2026-AM                                                                   public  about 2 months ago
+msadeedashraf/DSAI-python-da-jan-2026-pm                                                              public  about 2 months ago
+msadeedashraf/se-az400-dec-2025-am                                                                    public  about 2 months ago
+msadeedashraf/DSAI-python-122025-pm                                                                   public  about 3 months ago
+msadeedashraf/SE-PL300-112025-AM                                                                      public  about 4 months ago
+msadeedashraf/skills-getting-started-with-github-copilot  Exercise: Get started using GitHub Copilot  public  about 4 months ago
+msadeedashraf/DSAI-NOSQL-NOV2025-PM                                                                   public  about 5 months ago
+msadeedashraf/SE-AZ204-102025-AM                                                                      public  about 5 months ago
+msadeedashraf/dsai-sql-sep-2025                                                                       public  about 5 months ago
+msadeedashraf/home-lab                                                                                public  about 5 months ago
+msadeedashraf/SE-MAUI-Sep-2025                                                                        public  about 6 months ago
+msadeedashraf/dsai-Cloud-092025-pm                                                                    public  about 6 months ago
+msadeedashraf/asp-net-core-082025-am                                                                  public  about 6 months ago
+msadeedashraf/dsai-linux-082025-pm                                                                    public  about 7 months ago
+msadeedashraf/csharp-072025-am                                                                        public  about 8 months ago
+msadeedashraf/javascript-072025-pm                                                                    public  about 8 months ago
+msadeedashraf/html-062025-pm                                                                          public  about 9 months ago
+msadeedashraf/new-repo-name                                                                           public  about 9 months ago
+msadeedashraf/tsql-072025-pm                                                                          public  about 9 months ago
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL>mkdir no-sql-sample-project
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL>cd code
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\code>git init
+Reinitialized existing Git repository in D:/CBC/DSAI-Jan-2026-AM/04-No-SQL/code/.git/
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\code>cd..
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL>cd no-sql-sample-project
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is 7299-365D
+
+ Directory of d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project
+
+2026-04-22  09:21 AM    <DIR>          .
+2026-04-22  09:21 AM    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  644,962,107,392 bytes free
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>git init
+Initialized empty Git repository in D:/CBC/DSAI-Jan-2026-AM/04-No-SQL/no-sql-sample-project/.git/
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>echo Hello from Sadeed > Readme.md
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is 7299-365D
+
+ Directory of d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project
+
+2026-04-22  09:23 AM    <DIR>          .
+2026-04-22  09:21 AM    <DIR>          ..
+2026-04-22  09:23 AM                20 Readme.md
+               1 File(s)             20 bytes
+               2 Dir(s)  644,962,054,144 bytes free
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>git add .
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>git commit -m "Initial Commit"
+[master (root-commit) 3c90be6] Initial Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Readme.md
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>git branch -M main
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>git auth login
+git: 'auth' is not a git command. See 'git --help'.
+
+The most similar commands are
+        push
+        status
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>gh auth login
+? Where do you use GitHub? GitHub.com
+? What is your preferred protocol for Git operations on this host? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: B0C4-714F
+Press Enter to open https://github.com/login/device in your browser...
+^C
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>gh repo list
+
+Showing 30 of 71 repositories in @msadeedashraf
+
+NAME                                                      DESCRIPTION                                 INFO    UPDATED
+msadeedashraf/FSWD-MEAN-APR-2026-AM                                                                   public  about 19 hours ago
+msadeedashraf/DSAI-NOSQL-APRIL-2026-AM                                                                public  about 22 hours ago
+msadeedashraf/test-abc                                                                                public  about 22 hours ago
+msadeedashraf/dsai-nosql-test2                                                                        public  about 22 hours ago
+msadeedashraf/dsai-nosql-test                                                                         public  about 22 hours ago
+msadeedashraf/DSAI-PL300-APR-2026-PM                                                                  public  about 4 days ago
+msadeedashraf/DSAI-DP700-MAR-2026-PM                                                                  public  about 14 days ago
+msadeedashraf/DSAI-SQL-MAR-2026-AM                                                                    public  about 19 days ago
+msadeedashraf/DSAI-ML-Feb-2026-PM                                                                     public  about 1 month ago
+msadeedashraf/html-abhay-feb-2026-pm                                                                  public  about 2 months ago
+msadeedashraf/dsai-cloud-feb-2026-am                                                                  public  about 2 months ago
+msadeedashraf/DSAI-LINUX-JAN2026-AM                                                                   public  about 2 months ago
+msadeedashraf/DSAI-python-da-jan-2026-pm                                                              public  about 2 months ago
+msadeedashraf/se-az400-dec-2025-am                                                                    public  about 2 months ago
+msadeedashraf/DSAI-python-122025-pm                                                                   public  about 3 months ago
+msadeedashraf/SE-PL300-112025-AM                                                                      public  about 4 months ago
+msadeedashraf/skills-getting-started-with-github-copilot  Exercise: Get started using GitHub Copilot  public  about 4 months ago
+msadeedashraf/DSAI-NOSQL-NOV2025-PM                                                                   public  about 5 months ago
+msadeedashraf/SE-AZ204-102025-AM                                                                      public  about 5 months ago
+msadeedashraf/dsai-sql-sep-2025                                                                       public  about 5 months ago
+msadeedashraf/home-lab                                                                                public  about 5 months ago
+msadeedashraf/SE-MAUI-Sep-2025                                                                        public  about 6 months ago
+msadeedashraf/dsai-Cloud-092025-pm                                                                    public  about 6 months ago
+msadeedashraf/asp-net-core-082025-am                                                                  public  about 6 months ago
+msadeedashraf/dsai-linux-082025-pm                                                                    public  about 7 months ago
+msadeedashraf/csharp-072025-am                                                                        public  about 8 months ago
+msadeedashraf/javascript-072025-pm                                                                    public  about 8 months ago
+msadeedashraf/html-062025-pm                                                                          public  about 9 months ago
+msadeedashraf/new-repo-name                                                                           public  about 9 months ago
+msadeedashraf/tsql-072025-pm                                                                          public  about 9 months ago
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>gh repo create no-sql-sample-project --public --source= --remote=origin --push
+the `--remote` option can only be used with `--source`
+
+Usage:  gh repo create [<name>] [flags]
+
+Flags:
+      --add-readme             Add a README file to the new repository
+  -c, --clone                  Clone the new repository to the current directory
+  -d, --description string     Description of the repository
+      --disable-issues         Disable issues in the new repository
+      --disable-wiki           Disable wiki in the new repository
+  -g, --gitignore string       Specify a gitignore template for the repository
+  -h, --homepage URL           Repository home page URL
+      --include-all-branches   Include all branches from template repository
+      --internal               Make the new repository internal
+  -l, --license string         Specify an Open Source License for the repository
+      --private                Make the new repository private
+      --public                 Make the new repository public
+      --push                   Push local commits to the new repository
+  -r, --remote string          Specify remote name for the new repository
+  -s, --source string          Specify path to local repository to use as source
+  -t, --team name              The name of the organization team to be granted access
+  -p, --template repository    Make the new repository based on a template repository
+
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>gh repo create no-sql-sample-project --public --source --remote=origin --push
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project\--remote=origin is not a git repository. Run `git -C "--remote=origin" init` to initialize it
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>gh repo create no-sql-sample-project --public --source=. --remote=origin --push
+✓ Created repository msadeedashraf/no-sql-sample-project on github.com
+  https://github.com/msadeedashraf/no-sql-sample-project
+✓ Added remote https://github.com/msadeedashraf/no-sql-sample-project.git
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 234 bytes | 234.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/msadeedashraf/no-sql-sample-project.git
+ * [new branch]      HEAD -> main
+branch 'main' set up to track 'origin/main'.
+✓ Pushed commits to https://github.com/msadeedashraf/no-sql-sample-project.git
+
+d:\CBC\DSAI-Jan-2026-AM\04-No-SQL\no-sql-sample-project>
