@@ -106,3 +106,8 @@ gh repo create sample-project --public --source=. --remote=origin --push
 
 ```
 
+- --public --> anyone can see
+- --source=. --> . = current directory ( --source=../anyother-folder)
+- --remote=origin --> Name for the connection between local and GitHub (git remote add origin <repo-url>) --> (--remote=myserver) then (git push myserver main) 
+- --push --> Automatically pushes your local commits to GitHub
+
